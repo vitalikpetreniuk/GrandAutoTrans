@@ -321,11 +321,11 @@
                         <div class="actions">
                             Дії:
                             <div class="action-list">
-                                <a href="#">Ред. інформацію</a>
-                                <a href="#">Статус</a>
-                                <a href="#">Послуги</a>
-                                <a href="#">Зміна ПІН-коду</a>
-                                <a href="#">Поточні ліміти</a>
+                                <a data-modal="modal" class="open-modal-btn" href="#">Ред. інформацію</a>
+                                <a data-modal="modal" class="open-modal-btn" href="#">Статус</a>
+                                <a data-modal="modal" class="open-modal-btn" href="#">Послуги</a>
+                                <a data-modal="modal" class="open-modal-btn" href="#">Зміна ПІН-коду</a>
+                                <a data-modal="modal" class="open-modal-btn" href="#">Поточні ліміти</a>
                             </div>
                         </div>
                         <table class="table">
@@ -650,7 +650,16 @@
     </div>
 </div>
 <div class="modal" id="modal">
-    <div class="modal_content">modal content</div>
+    <div class="modal_content">
+        <div class="pop-up">
+            <div>
+                <div class="close">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 <div class="open-modal-btn" data-modal="modal">open</div>
 <script src="js/scripts.min.js"></script>
