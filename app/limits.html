@@ -205,7 +205,7 @@
 
                         </div>
                         <div>
-                            <a class="card-btn" href="#">Замовити картку</a>
+                            <a data-modal="modal-6" class="card-btn open-modal-btn" href="#">Замовити картку</a>
                         </div>
                     </div>
                     <div class="item">
@@ -239,7 +239,7 @@
 
                         </div>
                         <div>
-                            <a class="card-btn" href="#">Замовити картку</a>
+                            <a data-modal="modal-6" class="card-btn open-modal-btn" href="#">Замовити картку</a>
                         </div>
                     </div>
                     <div class="item">
@@ -273,7 +273,7 @@
 
                         </div>
                         <div>
-                            <a class="card-btn" href="#">Замовити картку</a>
+                            <a data-modal="modal-6" class="card-btn open-modal-btn" href="#">Замовити картку</a>
                         </div>
                     </div>
                     <div class="item">
@@ -307,7 +307,7 @@
 
                         </div>
                         <div>
-                            <a class="card-btn" href="#">Замовити картку</a>
+                            <a data-modal="modal-6" class="card-btn open-modal-btn" href="#">Замовити картку</a>
                         </div>
                     </div>
                 </div>
@@ -321,11 +321,11 @@
                         <div class="actions">
                             Дії:
                             <div class="action-list">
-                                <a data-modal="modal" class="open-modal-btn" href="#">Ред. інформацію</a>
-                                <a data-modal="modal" class="open-modal-btn" href="#">Статус</a>
-                                <a data-modal="modal" class="open-modal-btn" href="#">Послуги</a>
-                                <a data-modal="modal" class="open-modal-btn" href="#">Зміна ПІН-коду</a>
-                                <a data-modal="modal" class="open-modal-btn" href="#">Поточні ліміти</a>
+                                <a data-modal="modal-1" class="open-modal-btn" href="#">Ред. інформацію</a>
+                                <a data-modal="modal-2" class="open-modal-btn" href="#">Статус</a>
+                                <a data-modal="modal-3" class="open-modal-btn" href="#">Послуги</a>
+                                <a data-modal="modal-4" class="open-modal-btn" href="#">Зміна ПІН-коду</a>
+                                <a data-modal="modal-5" class="open-modal-btn" href="#">Поточні ліміти</a>
                             </div>
                         </div>
                         <table class="table">
@@ -661,7 +661,249 @@
         </div>
     </div>
 </div>
-<div class="open-modal-btn" data-modal="modal">open</div>
+<div class="modal" id="modal-1">
+
+    <div class="modal_content">
+        <div class="bg-close">
+        </div>
+        <div class="pop-up">
+            <div>
+                <div class="close">
+
+                </div>
+                <div class="heading">Ред.інформацію
+                </div>
+                <div class="form ">
+                    <form class="form-1" action="">
+                        <div>
+                            <label for="">
+                                <span>Автомобіль №</span>
+                                <input type="text">
+                            </label>
+                        </div>
+                        <div>
+                            <input value="Відправити" type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal-2">
+    <div class="modal_content">
+        <div class="bg-close">
+        </div>
+        <div class="pop-up">
+            <div>
+                <div class="close">
+
+                </div>
+                <div class="heading">Статуси
+
+                </div>
+                <div class="form ">
+                    <form class="form-2" action="">
+                        <div class="col-12">
+                            <input type="radio" id="status_1" name="status" value="1" class="form-control">														<label for="status_1" class="control-label">Активна</label>
+                            <input type="radio" id="status_2" name="status" value="2" class="form-control">														<label for="status_2" class="control-label">Повернена</label>
+                            <input type="radio" id="status_0" name="status" value="0" class="form-control">														<label for="status_0" class="control-label">Не активна</label>													</div>
+                        <div>
+                            <input value="Відправити" type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal" id="modal-3">
+
+    <div class="modal_content">
+        <div class="bg-close">
+        </div>
+        <div class="pop-up">
+            <div>
+                <div class="close">
+
+                </div>
+                <div class="heading">Управління послугами для обраних карток
+
+                </div>
+                <div class="form ">
+                    <form class="form-3" action="">
+                            <div>
+                                <label for="">
+                                    <span>А92</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label for="">
+                                    <span>А95</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label for="">
+                                    <span>А95+</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label for="">
+                                    <span>ДТ</span>
+                                    <input type="checkbox">
+                                </label>
+
+                                <label for="">
+                                    <span>ДТ+</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label for="">
+                                    <span>СТО</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label for="">
+                                    <span>Газ</span>
+                                    <input type="checkbox">
+                                </label>
+                                <label for="">
+                                    <span>Послуги</span>
+                                    <input type="checkbox">
+                                </label>
+                            </div>
+                            <input value="Відправити" type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<div class="modal" id="modal-4">
+    <div class="modal_content">
+        <div class="bg-close">
+        </div>
+        <div class="pop-up">
+            <div>
+                <div class="close">
+
+                </div>
+                <div class="heading">Зміна ПІН-коду
+
+                </div>
+                <div class="form ">
+                    <form class="form-4" action="">
+                        <div>
+                            Змінити поточний ПІН-код
+                        </div>
+                        <input value="Підтвердити" type="submit">
+                </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal" id="modal-5">
+    <div class="modal_content">
+        <div class="bg-close">
+        </div>
+        <div class="pop-up">
+            <div>
+                <div class="close">
+
+                </div>
+                <div class="form-5">
+                    <table><tbody><tr><th>Номер картки</th><th>Ліміти (грн. доба)</th> <th> Ліміти (л. доба)</th><th>Ліміти (грн. міс.)</th> <th> Ліміти (л. міс.)</th> <th>А92</th><th>А95</th> <th>А95+</th><th>Газ</th><th>ДТ</th> <th>ДТ+</th> <th>СТО</th><th>Послуги</th> </tr><tr><td>7825390000047243</td><td>0.00</td><td>100.00</td><td>0.00</td><td>0.00</td><td>Ні</td><td>Ні</td><td>Ні</td><td>Ні</td><td>Ні</td><td>Ні</td><td>Ні</td><td>Ні</td></tr></tbody></table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<div class="modal" id="modal-6">
+    <div class="modal_content">
+        <div class="bg-close">
+        </div>
+        <div class="pop-up">
+            <div>
+                <div class="close">
+
+                </div>
+                <div class="heading">Замовити картку
+
+                </div>
+                <div class="form-6 ">
+                    <form class="form-6" action="">
+                        <div>
+                            <label for="">
+                                <span>А92</span>
+                                <input type="checkbox">
+                            </label>
+                            <label for="">
+                                <span>А95</span>
+                                <input type="checkbox">
+                            </label>
+                            <label for="">
+                                <span>А95+</span>
+                                <input type="checkbox">
+                            </label>
+                            <label for="">
+                                <span>ДТ</span>
+                                <input type="checkbox">
+                            </label>
+
+                            <label for="">
+                                <span>ДТ+</span>
+                                <input type="checkbox">
+                            </label>
+                            <label for="">
+                                <span>СТО</span>
+                                <input type="checkbox">
+                            </label>
+                            <label for="">
+                                <span>Газ</span>
+                                <input type="checkbox">
+                            </label>
+                            <label for="">
+                                <span>Послуги</span>
+                                <input type="checkbox">
+                            </label>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="">
+                                    <span>Автомобіль №</span>
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div>
+                                <label for="">
+                                    <span>Автомобіль №</span>
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div>
+                                <label for="">
+                                    <span>Автомобіль №</span>
+                                    <input type="text">
+                                </label>
+                            </div>
+                            <div>
+                                <label for="">
+                                    <span>Автомобіль №</span>
+                                    <input type="text">
+                                </label>
+                            </div>
+                        </div>
+                        <input value="Відправити" type="submit">
+                    </form>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 <script src="js/scripts.min.js"></script>
 </body>
 </html>
