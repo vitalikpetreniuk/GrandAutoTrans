@@ -3,10 +3,12 @@ $(function() {
     $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
         $(this)
             .addClass('active').siblings().removeClass('active')
-            .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+            .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active')
+            .closest('div.tabs-2').find('div.tabs__content2').removeClass('active').eq($(this).index()).addClass('active');
     });
 
 });
+
 $('.filter-btn').on('click', function (){
     $('.filter td').toggleClass('show')
 })
@@ -53,6 +55,36 @@ $('.modal .bg-close').on('click', function (){
     $(this).closest('.modal').hide()
     $('body').removeClass('fixed')
 })
+$('.users-page .left-col .banks .item .green-header').on('click', function (){
+    $(this).siblings('.info').toggleClass('open')
+    $(this).toggleClass('open')
+
+})
+$('.sort > img').on('click', function (){
+    $(this).siblings('.sort-filter').toggleClass('open')
+
+})
+$('.sort .sort-filter .close-btn').on('click', function (){
+    $(this).closest('.sort-filter').toggleClass('open')
+
+})
+$('.users-page .table-block .users-table-mob .all-managers').on('click', function (e){
+    e.preventDefault()
+    $(this).siblings('.all-mng-info').toggleClass('open')
+    $(this).toggleClass('open')
+
+
+})
+$('.users-page .table-block .users-table-mob .table-mob .item>span:nth-of-type(1)').on('click', function (){
+    $(this).siblings('.info').toggleClass('open')
+    $(this).toggleClass('open')
+
+})
+$('.migration-page .migration-table-mob .table-mob .item>span:nth-of-type(1)').on('click', function (){
+    $(this).siblings('.info').toggleClass('open')
+    $(this).toggleClass('open')
+
+})
 $('.modal:not(*)').on('click', function (){
     $(this).hide()
 })
@@ -60,6 +92,11 @@ $('.selection .item > span').on('click', function (){
     $(this).toggleClass('open');
     $(this).siblings('.actions').toggleClass('open')
 
+})
+$('.users-page .left-col .banks .item .info>div:nth-of-type(1) >     a').on('click', function (e){
+    e.preventDefault()
+    $(this).parent().toggleClass('open');
+    $(this).siblings('.actions').toggleClass('open');
 })
 $('.select').each(function() {
     const _this = $(this),
@@ -115,4 +152,19 @@ $('.select').each(function() {
         }
     });
 
+});
+jQuery(document).ready(function() {
+    jQuery('.btrn-1').on('click', function() {
+        jQuery('.btr-1')[0].click();
+    });
+});
+jQuery(document).ready(function() {
+    jQuery('.btrn-2').on('click', function() {
+        jQuery('.btr-2')[0].click();
+    });
+});
+jQuery(document).ready(function() {
+    jQuery('.btrn-3').on('click', function() {
+        jQuery('.btr-3')[0].click();
+    });
 });

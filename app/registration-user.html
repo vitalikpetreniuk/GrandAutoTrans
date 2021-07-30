@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="css/main.min.css">
 
 </head>
-<body class="contacts-page">
+<body>
 <div class="top-header">
     <div class="container">
         <div class="phone">
@@ -41,7 +41,7 @@
         </div>
     </div>
 </div>
-<div class="header">
+<div class="d-md-none header">
     <div class="container">
         <div class="burger">
             <div class="stripe"></div>
@@ -55,7 +55,7 @@
                     <li >
                         <a href="#">Інформація</a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="#">зміна ліміту</a>
                     </li>
                     <li>
@@ -64,11 +64,20 @@
                     <li>
                         <a href="#">звіти</a>
                     </li>
+                    <li  class="active">
+                        <a href="#">користувачі</a>
+                    </li>
+                    <li>
+                        <a href="#">заявки</a>
+                    </li>
                     <li>
                         <a href="#">документи</a>
                     </li>
                     <li>
                         <a href="#">контакти</a>
+                    </li>
+                    <li>
+                        <a href="#">міграції</a>
                     </li>
                 </ul>
                 <div class="telegram">
@@ -78,39 +87,46 @@
         </div>
     </div>
 </div>
-<div class="main-block">
-    <div class="container contacts-container">
-        <div class="contacts">
-            <div class="heading">
-                Контакти
-            </div>
-            <div class="item">
-                <span>Скорочене найменування</span>
-                <span>Гранд Автотранс</span>
-            </div>
-            <div class="item">
-                <span>Повне найменування</span>
-                <span>ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "ГРАНД АВТОТРАНС ГРУПП"</span>
-            </div>
-            <div class="item">
-                <span>ЄДРПОУ:</span>
-                <span>42674636</span>
-            </div>
-            <div class="item">
-                <span>ІПН:</span>
-                <span>426746326539</span>
-            </div>
-            <div class="item">
-                <span>Адреса:</span>
-                <span>02002, м.Київ, Євгена Сверстюка, будинок № 11, корпус А</span>
-            </div>
-            <div class="item">
-                <span>Телефон:</span>
-                <span> <a href="tel:380992785686">+38 (099) 278 56 86</a><br><a href="380681233232">+38 (069) 123 32 32</a></span>
+<div class="registration registration-manager">
+    <div class="registration-block">
+        <div class="row no-gutters">
+            <div class="col-12">
+                <div class="heading">
+                    Реєстрація нового користувача
+                </div>
+                <form action="">
+                    <label for="">
+                        <span>ПІБ</span>
+                        <input type="text">
+                        <span class="warning show">*Це поле є обов’язковим для заповнення</span>
+                    </label>
+                    <label for="">
+                        <span>Логін</span>
+                        <input type="text">
+                        <span class="warning">*Це поле є обов’язковим для заповнення</span>
+                    </label>
+                    <label for="">
+                        <span>Контактний E-mail</span>
+                        <input type="text">
+                        <span class="warning">*Це поле є обов’язковим для заповнення</span>
+                    </label>
+                    <label for="">
+                        <span>Пароль</span>
+                        <input type="text">
+                        <span class="warning">*Це поле є обов’язковим для заповнення</span>
+                    </label>
+                    <label for="">
+                        <span>Повторіть пароль</span>
+                        <input type="text">
+                        <span class="warning">*Це поле є обов’язковим для заповнення</span>
+                    </label>
+                    <input class="green-btn" value="Зареєструвати" type="submit">
+                </form>
             </div>
         </div>
     </div>
 </div>
+
 <script src="js/scripts.min.js"></script>
 </body>
 </html>
