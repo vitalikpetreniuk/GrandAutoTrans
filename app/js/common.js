@@ -12,6 +12,13 @@ $(function() {
 $('.filter-btn').on('click', function (){
     $('.filter td').toggleClass('show')
 })
+$('.filter-mob .close').on('click', function (){
+    $(this).closest('.filter-mob').removeClass('open')
+})
+$(".filter-mob-btn > div:first-of-type").on('click', function (e){
+    $('.filter-mob').toggleClass('open')
+})
+
 $('.open-this').on('click', function (evt){
     evt.preventDefault();
     $(this).siblings('.info').toggleClass('show');
